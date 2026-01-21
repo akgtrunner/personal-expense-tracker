@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container */
+.container {
+  max-width: 480px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs & select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Add button */
+.add-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Expense list */
+.expense-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+/* Single expense item */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f7f9fb;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.expense-item:hover {
+  background: #eef3f7;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ff5252;
+  color: white;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #e53935;
+}
+
+/* Total amount */
+.total {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Empty text */
+p {
+  text-align: center;
+  color: #777;
+}
+
+/* Divider */
+hr {
+  margin: 18px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Small animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
